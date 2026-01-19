@@ -1,4 +1,33 @@
 <!DOCTYPE html><html lang="de"><head>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://domain.com/#website",
+      "url": "https://domain.com",
+      "name": "domain"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://domain.com/#org",
+      "name": "domain",
+      "url": "https://domain.com"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://domain.com/terms_of_services.html",
+      "url": "https://domain.com/terms_of_services.html",
+      "name": "domain",
+      "isPartOf": {
+        "@id": "https://domain.com/#website"
+      },
+      "inLanguage": "de"
+    }
+  ]
+}
+</script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nutzungsbedingungen - AutoTech Premium | Professionelle Automobildienstleistungen</title>
@@ -12,29 +41,48 @@
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
- </head>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+<link rel="stylesheet" href="./header-footer.css">
+</head>
  <body>
-  <header class="l-header">
-   <div class="l-container">
-    <nav class="c-nav" role="navigation" aria-label="Hauptnavigation">
-     <a href="/" class="c-logo" aria-label="AutoElite Deutschland Startseite"> <img src="img/hergestellt-in-deutschland-badge-tag-siegel-38.jpg" alt="AutoElite Deutschland Logo" class="c-logo__img" width="150" height="40"> </a>
-     <button class="c-nav__toggle" type="button" aria-controls="nav-menu" aria-expanded="false" aria-label="Menü öffnen"><span class="c-nav__toggle-bar"></span> <span class="c-nav__toggle-bar"></span> <span class="c-nav__toggle-bar"></span></button>
-     <div class="c-nav__menu" id="nav-menu">
-      <ul class="c-nav__list">
-       <li class="c-nav__item"><a href="/" class="c-nav__link" aria-current="page">Startseite</a></li>
-       <li class="c-nav__item"><a href="about.html" class="c-nav__link">Über uns</a></li>
-       <li class="c-nav__item"><a href="services.html" class="c-nav__link">Dienstleistungen</a></li>
-       <li class="c-nav__item"><a href="team.html" class="c-nav__link">Unser Team</a></li>
-       <li class="c-nav__item"><a href="contact.html" class="c-nav__link">Kontakt</a></li>
+  <header class="dr-header" aria-label="Primary">
+  <div class="dr-header-inner">
+    <div class="dr-header-main">
+      <div class="dr-header-brand">
+        <div class="dr-logo-wrap">
+          <img class="dr-logo-img" src="img/hergestellt-in-deutschland-badge-tag-siegel-38.jpg" alt="AutoElite Deutschland Logo" width="150" height="40" loading="lazy" />
+        </div>
+        <span class="dr-brand-name">domain</span>
+      </div>
+      <nav class="dr-nav" aria-label="Main navigation">
+        <ul class="dr-nav-list">
+          <li class="dr-nav-item"><a class="dr-nav-link" href="./index.html">Home</a></li>
+          <li class="dr-nav-item"><a class="dr-nav-link" href="./about.html">About</a></li>
+          <li class="dr-nav-item"><a class="dr-nav-link" href="./contact.html">Contact</a></li>
+          <li class="dr-nav-item"><a class="dr-nav-link" href="./services.html">Services</a></li>
+          <li class="dr-nav-item"><a class="dr-nav-link" href="./team.html">Team</a></li>
+        </ul>
+      </nav>
+      <button class="dr-nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="dr-nav-toggle-bar"></span>
+        <span class="dr-nav-toggle-bar"></span>
+      </button>
+    </div>
+    <div class="dr-nav-panel" aria-hidden="true">
+      <ul class="dr-nav-panel-list">
+        <li class="dr-nav-panel-item"><a class="dr-nav-panel-link" href="./index.html">Home</a></li>
+        <li class="dr-nav-panel-item"><a class="dr-nav-panel-link" href="./about.html">About</a></li>
+        <li class="dr-nav-panel-item"><a class="dr-nav-panel-link" href="./contact.html">Contact</a></li>
+        <li class="dr-nav-panel-item"><a class="dr-nav-panel-link" href="./services.html">Services</a></li>
+        <li class="dr-nav-panel-item"><a class="dr-nav-panel-link" href="./team.html">Team</a></li>
       </ul>
-      <a href="#contact-form" class="c-button c-button--primary c-nav__cta">Beratung anfragen</a>
-     </div>
-    </nav>
-   </div>
-  </header>
+    </div>
+  </div>
+</header>
   <main>
    <section class="l-section py-4 py-md-5" style="scroll-margin-top: var(--header-h);">
-    <div class="container l-container">
+    <div class="container container">
      <nav aria-label="breadcrumb" class="mb-4">
       <ol class="breadcrumb">
        <li class="breadcrumb-item"><a href="index.html">Startseite</a></li>
@@ -186,51 +234,51 @@
     </div>
    </section>
   </main>
-  <footer class="l-footer">
-   <div class="l-container">
-    <div class="l-footer__top">
-     <div class="l-footer__brand">
-      <a href="/" class="c-logo" aria-label="AutoElite Deutschland Startseite"> <img src="img/hergestellt-in-deutschland-badge-tag-siegel-38.jpg" alt="AutoElite Deutschland Logo" class="c-logo__img" width="150" height="40"> </a>
-      <p class="l-footer__tagline">Ihre Premium-Lösung für Fahrzeugfinanzierung und Service in ganz Deutschland.</p>
-     </div>
-     <div class="l-footer__nav">
-      <div class="l-footer__column">
-       <h3 class="l-footer__heading">Navigation</h3>
-       <ul class="l-footer__list">
-        <li class="l-footer__item"><a href="/" class="l-footer__link">Startseite</a></li>
-        <li class="l-footer__item"><a href="about.html" class="l-footer__link">Über uns</a></li>
-        <li class="l-footer__item"><a href="services.html" class="l-footer__link">Dienstleistungen</a></li>
-        <li class="l-footer__item"><a href="team.html" class="l-footer__link">Unser Team</a></li>
-        <li class="l-footer__item"><a href="contact.html" class="l-footer__link">Kontakt</a></li>
-       </ul>
+  <footer class="dr-footer" aria-label="Footer">
+  <div class="dr-footer-inner">
+    <div class="dr-footer-top">
+      <div class="dr-footer-brand-block">
+        <div class="dr-footer-brand-name">domain</div>
+        <p class="dr-footer-disclaimer">The information provided on domain.com is for general informational purposes only and does not constitute legal, financial, or professional advice. domain makes no representations or warranties regarding accuracy, completeness, or reliability of any content. Use of domain.com and any decisions made based on its content are at your sole risk.</p>
       </div>
-      <div class="l-footer__column">
-       <h3 class="l-footer__heading">Rechtliches</h3>
-       <ul class="l-footer__list">
-        <li class="l-footer__item"><a href="privacy.html" class="l-footer__link">Datenschutzerklärung</a></li>
-        <li class="l-footer__item"><a href="terms_and_conditions.html" class="l-footer__link">AGB</a></li>
-        <li class="l-footer__item"><a href="terms_of_services.html" class="l-footer__link">Nutzungsbedingungen</a></li>
-        <li class="l-footer__item"><a href="cookie_policy.html" class="l-footer__link">Cookie-Richtlinie</a></li>
-       </ul>
+      <div class="dr-footer-nav-blocks">
+        <nav class="dr-footer-nav" aria-label="Footer main navigation">
+          <h2 class="dr-footer-heading">Navigate</h2>
+          <ul class="dr-footer-nav-list">
+            <li class="dr-footer-nav-item"><a class="dr-footer-nav-link" href="./index.html">Home</a></li>
+            <li class="dr-footer-nav-item"><a class="dr-footer-nav-link" href="./about.html">About</a></li>
+            <li class="dr-footer-nav-item"><a class="dr-footer-nav-link" href="./contact.html">Contact</a></li>
+            <li class="dr-footer-nav-item"><a class="dr-footer-nav-link" href="./services.html">Services</a></li>
+            <li class="dr-footer-nav-item"><a class="dr-footer-nav-link" href="./team.html">Team</a></li>
+          </ul>
+        </nav>
+        <nav class="dr-footer-legal" aria-label="Legal navigation">
+          <h2 class="dr-footer-heading">Legal</h2>
+          <ul class="dr-footer-legal-list">
+            <li class="dr-footer-legal-item"><a class="dr-footer-legal-link" href="./cookie_policy.html">Cookie Policy</a></li>
+            <li class="dr-footer-legal-item"><a class="dr-footer-legal-link" href="./privacy.html">Privacy</a></li>
+            <li class="dr-footer-legal-item"><a class="dr-footer-legal-link" href="./services.html">Services</a></li>
+            <li class="dr-footer-legal-item"><a class="dr-footer-legal-link" href="./terms_and_conditions.html">Terms And Conditions</a></li>
+            <li class="dr-footer-legal-item"><a class="dr-footer-legal-link" href="./terms_of_services.html">Terms Of Services</a></li>
+          </ul>
+        </nav>
       </div>
-      <div class="l-footer__column">
-       <h3 class="l-footer__heading">Kontakt</h3>
-       <address class="l-footer__address">
-        <p><strong>AutoElite Deutschland</strong></p>
-        <p>Königsallee 78</p>
-        <p>40212 Düsseldorf</p>
-        <p>Deutschland</p>
-        <p><a href="tel:+4921187659432" class="l-footer__link">+49 211 87659432</a></p>
-        <p><a href="mailto:info@domain.com" class="l-footer__link">info@domain.com</a></p>
-       </address>
-      </div>
-     </div>
     </div>
-    <div class="l-footer__bottom">
-     <p class="l-footer__copyright">© 2025 AutoElite Deutschland. Alle Rechte vorbehalten.</p>
+    <div class="dr-footer-bottom">
+      <p class="dr-footer-copy">© <span class="dr-footer-copy-brand">domain</span>. All rights reserved.</p>
+      <p class="dr-footer-note">Use of domain.com is subject to the applicable terms and policies listed above.</p>
     </div>
-   </div>
-  </footer>
+  </div>
+</footer>
   <script src="script.js" defer=""></script>
  
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+if (typeof AOS !== "undefined" && !window.__AOS_INITIALIZED__) {
+  AOS.init({ once: true, duration: 700, easing: "ease-out-cubic" });
+  window.__AOS_INITIALIZED__ = true;
+}
+</script>
+<script src="./header-footer.js"></script>
+<script src="./consent.js"></script>
 </body></html>

@@ -1506,7 +1506,7 @@ button:disabled {
 }
 
 .g-4 {
-  gap: var(--space-lg);
+
 }
 
 .col-12 {
@@ -2286,5 +2286,11 @@ address {
     transition: none !important;
     animation: none !important;
     transform: none !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .g-4 {
+    gap: var(--space-lg);
   }
 }
